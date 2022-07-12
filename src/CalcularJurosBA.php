@@ -1,9 +1,10 @@
 <?php 
 namespace Ricardo\DependencyInvertion;
 
-class CalcularJurosBA{
+class CalcularJurosBA implements CobrancaInterface
+{
     
-    public function getJurosBA(float $valor){
+    public function getJuros(float $valor){
         return $valor * 0.50;
     }
 }
